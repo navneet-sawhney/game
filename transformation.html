@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.div1{
+    width:200px;
+    height:200px;
+    background:blue;
+
+    /* transform: translate(50px,100px);  */
+    /* transform: rotate(20deg)   */
+    /* transform:scale(2,4)  */
+     /* transform:scaleX(2)  */
+    /* transform:scaleY(2)  */
+     /* transform:skew(-20deg,20deg)   */
+     /* transform:skewX(-20deg)  */
+    /* transform:skewY(20deg) */
+    transform: translate(50px,100px) skew(-20deg,20deg) scale(1,2);
+   
+    /* transform:rotateX(30deg); */
+    /* transform:rotateY(30deg); */
+    /* transform:rotateZ(30deg);   */
+   /* transition: width 2s, height 2s, transform 4s;
+   /* ease,ease-in,ease-out */
+   /* transition-timing-function:linear;  */
+} 
+
+.div1:hover{
+    width:50px;
+    height:50px;
+    transform: skew(-20deg,20deg)
+}
+.div2{
+    width:200px;
+    height:200px;
+    background:cyan;
+}
+.div2 .div2child{
+    width:80px;
+    height:80px;
+    background:orange;
+}
+
+
+</style>
+</head>
+<body>
+    
+   <div class="div1"></div>
+   <div id = "div2" class="div2">
+    <div class ="div2child"></div>
+   </div>
+
+
+
+</body>
+</html>
+
+

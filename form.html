@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>Document</title>
+    <style>
+     form input[type="text"]{
+      width:50%;
+      height: 40px;
+      padding: 10px;
+      font-size:30px;
+      margin:10px;
+     }
+
+     form button{
+      background:aqua;
+      font-size: 10px;
+      color:white;
+      width: 70px;
+      height: 70px;
+      border-radius: 70px;
+
+
+     }
+      
+    </style>
+  </head>
+  <body>
+    <!-- Form method: GET, POST, action: sending data to -->
+  <form method="GET" action="abc.php">
+    
+    <!-- FIELDSET- Helps in grouping all the elements together -->
+
+    <fieldset>
+    <!-- LEGEND- Caption or title of the form -->
+    <legend>Job Application Form</legend>
+    <div>
+      <label>First Name:</label>
+      <input type = "text"
+             maxlength="12"
+             required
+             name = "firstname"
+             placeholder="Enter your first name"/>
+    </div>
+    <div>
+      <label>Last Name:</label>
+      <input type = "text"
+             maxlength="18"
+             required
+             name = "lastname"
+             placeholder="Enter your last name"/>
+    </div>
+    <div>
+      <label>Email:</label>
+      <input type = "email"
+             maxlength="18"
+             required
+             name = "email"
+             placeholder="Enter your email id"/>
+    </div>
+    
+    <div>
+      <label>Gender:</label>
+      <input type = "radio" value="Female" name="gender"/>Female
+      <input type ="radio"  value="Male"  name="gender"/>Male
+      <input type ="radio"  value="Other" name="gender"/>Other
+    </div>
+  
+    <div>
+      <label>Country:</label>
+      <select name = "Country">
+        <option value ="NZ">New Zealand</option>
+        <option value ="Australia">Australia</option>
+        <option value ="Norway">Norway</option>
+        <option value ="India">India</option>
+      </select>
+    </div>
+    
+    <div>
+      <label>Hobbies:</label>
+      <input type = "checkbox" value="Painting" name="hobbies"/> Painting
+      <br/>
+      <input type = "checkbox" value="Calligraphy" name="hobbies"/> Calligraphy
+      <br/>
+      <input type = "checkbox" value="Poster making" name="hobbies"/> Poster making
+      <br/>
+      <input type = "checkbox" value="Dancing" name="hobbies"/> Dancing
+
+    </div>
+    
+    <div>
+      <label>Comments:</label>
+      <textarea name = "comments" rows="5" cols="50"></textarea>
+    </div>
+
+    <div>
+    <button type = "submit">Submit</button>
+  </div>
+
+
+    </fieldset>
+  </form>
+
+  </body>
+</html>

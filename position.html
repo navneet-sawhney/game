@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.box {
+  width: 100px;
+  height: 100px;
+  background: orange;
+  position: absolute;
+  bottom: 100px; /*top / bottom */
+  right: 50px; /* left / right */
+}
+.parentbox {
+  width: 300px;
+  height: 100px;
+  background: blue;
+  position: relative;
+}
+.parentbox .childbox {
+  width: 50px;
+  height: 50px;
+  background: yellow;
+  position: absolute;
+  right: 0px;
+}
+.fixedbox {
+  width: 50px;
+  height: 50px;
+  background: purple;
+  position: fixed;
+  left: 500px;
+  top: 450px;
+}
+
+.staticbox {
+  width: 50px;
+  height: 50px;
+  background: cyan;
+  /* by default the position is static */
+  position: static;
+  
+}
+
+.stickybox {
+  position: sticky;
+  background:lightpink;
+ top:20px;
+}
+</style>
+</head>
+<body>
+
+<div class="fixedbox">
+i m fixed box
+</div>
+<div class="box">
+i m box
+</div>
+<div class="mainparentbox">
+  <div class="parentbox">
+    i m parent box
+    <div class="childbox">
+      i m child box
+    </div>
+  </div>
+</div>
+<div class = "staticbox">
+Hey! I am a static box
+</div>
+<div class="stickybox">
+   i m sticky box
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<p></p>
+</body>
+
+</html>

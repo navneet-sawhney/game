@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  
+  .container{
+    background-color: green;
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+
+  }
+  .container .box{
+    background-color: orange;
+    margin: 20px;
+    padding:20px;
+  }
+  .video{
+    width:100%
+  }
+
+  @media only screen and (min-width: 375px) {
+        .container {
+          width: 75%;
+        }
+      }
+      @media only screen and (min-width: 992px) {
+        .container {
+          flex-direction: row;
+        }
+        .video {
+          width: 50%;
+        }
+      }
+  </style>
+</head>
+<body>
+
+    <div class = "container">
+        <div class = "box"></div>
+        <div class = "box"></div>
+        <div class = "box"></div>
+        <div class = "box"></div>
+        <div class = "box"></div>
+    </div>
+  <video class = "video" controls autoplay>
+    <source src ="https://www.w3schools.com/html/mov_bbb.mp4"
+    type = "video/mp4"/>
+  </video>
+
+  <audio class = "audio" controls autoplay muted>
+    <source
+    src="https://www.w3schools.com/html/mov_bbb.ogg"
+    type="audio/ogg"
+  />
+  </audio>
+ 
+</body>
+</html>

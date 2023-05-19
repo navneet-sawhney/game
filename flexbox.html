@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     
+    <!-- Flexboxes aims at providing a more efficient way to lay out, 
+    align and distribute space among items in a container, 
+    even when their size is unknown and/or dynamic 
+    (thus the word “flex”) -->
+    <title>Flexboxes</title>
+    <style>
+      .container {
+        display: flex;
+        width:100%; 
+        height: 50px;
+        
+        /* height: 400px; */
+        /* By default it is row */
+        /* row,row-reverse,column,column-reverse */
+        /* flex-direction:row;  */
+
+        /* nowrap(default), wrap, wrap-reverse */
+         /* flex-wrap:wrap;  */
+
+        /* flex-start|flex-end|center|left|right|space-evenly|
+        space-between|space-around */
+
+        /* space-between: items are evenly distributed in the line; 
+        first item is on the start line, last item on the end line */
+
+        /* space-evenly: items are distributed so that the spacing 
+        between any two items (and the space to the edges) is equal. */
+
+        /* space-around: items are evenly distributed in the line
+         with equal space around them. */
+        
+        justify-content: flex-start;
+        background: cyan; 
+        
+        /* align-items:flex-start|center|flex-end|stretch|baseline| */
+        align-items: baseline;
+       
+      }
+
+      /* .container div{
+       
+       
+   
+      } */
+    </style>
+  </head>
+  <body>
+    <div class ="container">
+        <div style="font-size: small;  margin: 20px; 
+        background: lightpink; width: 30px; height:20px">Box 1</div>
+        <div style="font-size: small;  margin: 20px; 
+        background: lightpink; width: 30px; height:40px">Box 2</div>
+        <div style="font-size: small;  margin: 20px; 
+        background: lightpink;width: 30px; height:30px">Box 3</div>
+        <div style="font-size: small; margin: 20px; 
+        background: lightpink;width: 30px; height:70px">Box 4</div>
+        <div style="font-size: small; margin: 20px; 
+        background: lightpink;width: 30px; height:35px">Box 5</div>
+        <div style="font-size: small; margin: 20px; 
+        background: lightpink;width: 30px; height:80px">Box 6</div>
+        <div style="font-size: small; margin: 20px; 
+        background: lightpink;width: 30px; height:70px">Box 7</div>
+        <div style="font-size: small; margin: 20px; 
+        background: lightpink;width: 30px; height:30px">Box 8</div>
+        <div style="font-size: small; margin: 20px; 
+        background: lightpink;width: 30px; height:10px">Box 9</div>
+        <div style="font-size: small; margin: 20px; 
+        background: lightpink;width: 30px; height:30px">Box 10</div>
+        <div style="font-size: small; margin: 20px; 
+        background: lightpink;width: 30px; height:60px">Box 11</div>
+        <div style="font-size: small; margin: 20px; 
+        background: lightpink;width: 30px;height:50px">Box 12</div>
+    </div>
+  </body>
+</html>
